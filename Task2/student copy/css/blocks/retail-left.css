@@ -1,7 +1,4 @@
-.retail-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .retail-left {
   display: grid;
@@ -25,6 +22,15 @@
   margin: 0;
   padding: 0;
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.retail-left__item{
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
 }
 
 .retail-left__price {
@@ -34,6 +40,7 @@
   color: #3c52e6;
   padding: 16px 15px 14px;
   text-align: center;
+  margin: 0 0 28px;
 }
 
 .retail-left__price-text {
@@ -58,6 +65,8 @@
   line-height: 20px;
   color: #ffffff;
   padding: 14px 28px;
-  width: 239px;
+  width: 219px;
   height: 49px;
 }
+
+
