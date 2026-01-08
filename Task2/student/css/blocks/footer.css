@@ -59,7 +59,7 @@
   text-decoration: underline;
 }
 
-.footer-messengers__list {
+.footer__messengers-list {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@
   padding: 0;
 }
 
-.footer-information__list {
+.footer__information-list {
   list-style-type: none;
   display: flex;
   gap: 56px;
@@ -77,11 +77,12 @@
   padding: 0;
 }
 
-.footer-information__item {
+.footer__information-item {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
 }
+
 
 .footer__copyright {
   font-family: "Foros", "Arial", sans-serif;
