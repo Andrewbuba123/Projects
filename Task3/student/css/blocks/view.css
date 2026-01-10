@@ -1,0 +1,23 @@
+view{
+ margin: 0 0 80px;
+}
+
+.view__heading {
+  font-family: "Ardeco", "Arial", sans-serif;
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.view__text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}

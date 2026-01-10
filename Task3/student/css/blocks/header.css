@@ -1,0 +1,40 @@
+.header{
+margin: 0 0 48px;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr auto;
+  gap: 40px;
+  padding: 16px 50px;
+  align-items: center;
+}
+
+.header__project-info{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.header__logo-link{
+ align-self: center;
+}
+
+.header__options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: end;
+}
+
+.header__options-button {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 60px;
+  padding: 12px 20px;
+}
+
+.header__phone{
+ text-align: right;
+}

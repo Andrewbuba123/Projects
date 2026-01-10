@@ -1,0 +1,18 @@
+.hero {
+  margin: 0 0 80px;
+}
+
+.hero__heading {
+  font-family: "Ardeco", "Arial", sans-serif;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.hero__image {
+  width: 100%;
+  max-height: 760px;
+}

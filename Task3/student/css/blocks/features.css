@@ -1,0 +1,42 @@
+.features {
+  margin: 0 0 80px;
+}
+
+.features__title {
+  font-family: "Ardeco", "Arial", sans-serif;
+  color: rgba(32, 65, 134, 1);
+  font-size: 160px;
+  line-height: 140px;
+  margin: 0 0 16px;
+}
+
+.features__title.features__title--small {
+  font-size: 52px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 0 0 80px;
+}
+
+.features__wrapper {
+  display: grid;
+  grid-template-columns: auto 360px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 220px;
+}
+
+.features__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+ font-size: 20px;
+ line-height: 24px;
+ font-weight: 400;
+ text-transform: uppercase;
+}
