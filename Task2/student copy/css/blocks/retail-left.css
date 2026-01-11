@@ -18,9 +18,13 @@
   grid-column: 1 / span 2;
 }
 
+.retail-left__title-text{
+ display: block; 
+}
+
 .retail-left__benefits-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 16px;
   grid-column: 2/3;
   display: flex;
   flex-direction: column;
@@ -57,16 +61,6 @@ line-height: 18px;
   line-height: 40px;
 }
 
-.retail-left__button {
-  background-color: #23252e;
-  border: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  padding: 14px 28px;
-  width: 219px;
-  height: 49px;
-}
+
 
 

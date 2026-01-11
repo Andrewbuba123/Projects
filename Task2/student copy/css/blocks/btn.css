@@ -1,9 +1,16 @@
 .btn {
   font-family: "Open Sans", "Arial", sans-serif;
   color: #ffffff;
-  padding: 13px 27px;
+  padding: 14px 28px;
   border: 1px solid rgba(255, 255, 255, 50%);
   font-size: 14px;
   line-height: 20px;
   background-color: transparent;
+}
+
+.btn--retail-left {
+  background-color: #23252e;
+  border: none;
+  width: 219px;
+  height: 49px;
 }
