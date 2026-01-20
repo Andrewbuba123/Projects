@@ -8,7 +8,8 @@
 /* Blocks */
 /* ------------------------------------ */
 @import "blocks/header.css";
+@import "blocks/retail.css" ;
 @import "blocks/retail-inner.css" ;
-@import "blocks/retail-left.css";
+@import "blocks/retail-content.css";
 @import "blocks/footer.css";
 @import "blocks/btn.css";
