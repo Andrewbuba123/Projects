@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.card {
+  max-width: 400px;
+  margin: 70px auto 30px;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: aqua;
+}
+
+.card__text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.card__form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  margin: 0 0 30px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 30px;
+}
+
+.card__form-input {
+  width: 100%;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.card__form-button {
+  border-radius: 50%;
+  padding:10px 12px;
+}
+
+.weather{
+ display: none;
+ text-align: center;
+}
+
+.weather__temp{
+ font-size: 60px;
+ font-weight: 500;
+ margin: 0 0 20px;
+}
+
+.weather__name{
+ font-size: 20px;
+ margin: 0 0 20px;
+}
+
+.details{
+ display: flex;
+ justify-content: space-between;
+}
+
+.details__left{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+
+.details__left-text{
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+
+.details__right{
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+
+.details__left-text{
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}

@@ -1,0 +1,101 @@
+.house-style {
+  padding: 0 200px 0;
+
+  @include vp-1439 {
+    padding: 0 64px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 34px;
+    color: $color-zorba;
+
+    @include vp-1439 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 16px;
+    font-size: $fz-16;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__figure {
+    margin: 0 0 48px;
+    @include vp-767 {
+      margin: 0 0 40px;
+    }
+  }
+
+  &__img {
+    width: 800px;
+    height: 400px;
+    margin: 0 0 12px;
+
+    @include vp-1439 {
+      width: 600px;
+      height: 300px;
+    }
+
+    @include vp-767 {
+      width: 335px;
+      height: 170px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-light-grey-60;
+    text-align: right;
+
+    @include vp-767 {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+
+  &__features-list {
+    margin: 0 0 48px;
+    padding: 0 0 0 27px;
+
+    @include vp-767 {
+      margin: 0 0 40px;
+      padding: 0 0 0 21px;
+    }
+  }
+
+  &__features-list &__item:not(:last-child) {
+    margin: 0 0 8px;
+
+    @include vp-767 {
+      margin: 0 0 5px;
+    }
+  }
+
+  &__item {
+    font-size: $fz-16;
+    line-height: 24px;
+  }
+}

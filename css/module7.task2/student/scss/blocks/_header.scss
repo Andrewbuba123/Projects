@@ -1,0 +1,35 @@
+.header {
+  padding: 25px 0 23px;
+  border-bottom: 1px solid $color-gainsboro;
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 23px;
+    margin: 0 72px 0 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @include vp-1439{
+    margin: 0;
+    right: 0;
+    left: auto;
+    }
+  }
+
+  &__logo-link {
+    color: $color-blue-charcoa;
+  }
+}
+

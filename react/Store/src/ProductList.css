@@ -1,0 +1,14 @@
+.product-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.product-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  max-width: 240px;
+}

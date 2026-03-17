@@ -1,0 +1,66 @@
+.benefit {
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  min-height: 480px;
+  padding: 20px;
+  background-size: cover;
+  border: 2px solid $color-white;
+
+  @include vp-1439 {
+    width: 300px;
+    min-height: 400px;
+  }
+
+  &--round-all {
+    border-radius: 180px;
+  }
+
+  &--apartment {
+    background-image: url("../images/image-apartment.jpg");
+  }
+
+  &--pond {
+    background-image: url("../images/image-pond.jpg");
+  }
+
+  &--entrance {
+    background-image: url("../images/image-view-entrance-building.jpg");
+  }
+
+  &__number {
+    margin: 0 0 16px;
+    font-size: 80px;
+    font-family: $ff-ardeco;
+    line-height: 60px;
+
+    @include vp-1439 {
+      font-size: 60px;
+      margin: 0 0 8px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 24px;
+    font-size: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include vp-1439 {
+      font-size: 18px;
+      line-height: 20px;
+      margin: 0 0 20px;
+    }
+  }
+  &__icon {
+    @include vp-1439 {
+      width: 50px;
+      height: 8px;
+    }
+  }
+}

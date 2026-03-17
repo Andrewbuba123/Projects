@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-end;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &:hover &__link{
+   color: $color-ecru-white;
+  }
+
+  @include vp-1439{
+   gap: 20px;
+  }
+
+
+  &__link {
+    display: flex;
+    color: $color-trout;
+  }
+}

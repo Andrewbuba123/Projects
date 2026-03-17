@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2 class="card__text">Введите название города</h2>
+      <form action="submit" class="card__form">
+        <input
+          type="text"
+          class="card__form-input"
+          placeholder="Введите название города"
+        />
+        <button class="card__form-button">
+          <img src="images/search.png" alt="search" />
+        </button>
+      </form>
+      
+      <div class="weather">
+        <p class="weather__temp">24</p>
+        <p class="weather__name">Moscow</p>
+
+        <div class="details">
+          <div class="details__left">
+            <img src="images/humidity.png" alt="humidity" />
+            <div class="details__left-text">
+              <span class="details__left-text--percentage">73%</span>
+              <span>humidity</span>
+            </div>
+          </div>
+          <div class="details__right">
+            <img src="images/wind.png" alt="wind" />
+            <div class="details__left-text">
+              <span class="details__right-text--speed">2.3 km/h</span>
+              <span>wind speed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
