@@ -1,0 +1,7 @@
+.page_form {
+ margin: 0;
+ padding: 10px 20px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}

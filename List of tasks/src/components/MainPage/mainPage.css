@@ -1,0 +1,14 @@
+.mainPage {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+._span_ {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+}
