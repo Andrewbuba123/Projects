@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+  position: relative;
 }
 
 ._span_ {

@@ -15,21 +15,4 @@
   opacity: 0.5;
 }
 
-.button[data-kind="primary"] {
-  background-color: var(--primary);
-}
-.button[data-kind="primary"]:hover {
-  background-color: var(--primary-hover);
-}
 
-.button[data-kind="secondary"] {
-  background-color: var(--secondary);
-}
-
-.button[data-kind="secondary"]:hover {
-  background-color: var(--secondary-hover);
-}
-
-.button .loader-item {
-  background-color: white;
-}

@@ -3,28 +3,60 @@ import { FormField } from "../FormField/FormField";
 import { Button } from "../Button/Button";
 import { useState } from "react";
 
-export const PageForm = () => {
+export const PageForm = ({onAddTask}) => {
   const [formData, setFormData] = useState({
-    вид: "",
-    описание: "",
-    количество: "",
+    type: "",
+    description: "",
+    count: "",
   });
 
-  const handleChange = (field, value) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (event => {
-    e.preventDefault();
+  const resetForm = () => {
+    setFormData({
+      type: "",
+      description: "",
+      count: "",
+    });
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onAddTask(formData)
     console.log("Данные формы:", formData);
-  })
+    resetForm()
+  };
 
   return (
     <form className="page_form" onSubmit={handleSubmit}>
-      <FormField label="Вид" value={formData.вид} onChange={handleChange} />
-      <FormField label="Описание" value={formData.описание} onChange={handleChange} />
-      <FormField label="Количество" value={formData.количество} onChange={handleChange} />
-      <Button text="Отправить" />
+      <FormField
+        label="type"
+        field="type"
+        value={formData.type}
+        onChange={handleChange}
+        type="text"
+      />
+
+      <FormField
+        label="description"
+        field="description"
+        value={formData.description}
+        onChange={handleChange}
+        type="text"
+      />
+
+      <FormField
+        label="count"
+        field="count"
+        value={formData.count}
+        onChange={handleChange}
+        type="text"
+      />
+
+      <Button text="Отправить" type="submit" />
     </form>
   );
 };

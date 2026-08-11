@@ -1,22 +1,15 @@
-import { useState } from "react";
 import "./FormField.css";
 
-export const FormField = ({ label, value, onChange}) => {
-    
-
-
+export const FormField = ({ label, field, value, onChange , type}) => {
   const handleChange = (event) => {
-    onChange(label, event.target.value)
+    // Передаем событие наверх
+    onChange(event);
   };
 
   return (
     <label className="form-field">
       <span className="form-field__label">{label}</span>
-      <input
-        type={label === "Количество" ? "number" : "text"}
-        value={value}
-        onChange={handleChange}
-      ></input>
+      <input name={field} type={type} value={value} onChange={handleChange} />
     </label>
   );
 };
