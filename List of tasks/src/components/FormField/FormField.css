@@ -13,10 +13,10 @@
   align-self: center;
 }
 
-/* .form-field__error-text {
-  color: var(--error);
+.form-field__error-text {
+  color: firebrick;
   font-size: 12px;
-} */
+}
 
 .form-field > input {
   border-radius: 8px;
@@ -24,18 +24,3 @@
   border: 1px solid firebrick;
   padding: 12px 16px;
 }
-/* 
-.form-field:focus-within > input,
-.form-field:focus-within > textarea {
-  outline: none;
-  border-color: var(--primary);
-}
-
-.form-field:focus-within > .form-field__label {
-  color: var(--text-primary);
-}
-
-.form-field > input:invalid,
-.form-field > textarea:invalid {
-  border-color: var(--error);
-} */

@@ -1,8 +1,7 @@
 import ReactDOM from "react-dom/client";
-import { MainPage } from "./components/MainPage/mainPage";
-
-import "./main.css";
 import { StrictMode } from "react";
+import { MainPage } from "./components/MainPage/MainPage";
+import "./main.css";
 
 const rootElement = document.getElementById("root");
 
@@ -13,7 +12,7 @@ if (!rootElement) {
 const reactRoot = ReactDOM.createRoot(rootElement);
 
 reactRoot.render(
-  <StrictMode>  
+  <StrictMode>
     <MainPage />
   </StrictMode>,
 );

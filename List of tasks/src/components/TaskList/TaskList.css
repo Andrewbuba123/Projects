@@ -1,17 +1,8 @@
-
-
 .task-list {
-  list-style: none;       
+  width: 100%;
+  list-style: none;
   padding: 0;
-  margin: 20px auto;     
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  flex: 1;
-  gap: 15px;   
-  width: 100%;              
-}
-
-.task-list__element{
-    min-width: 600px;
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: space-between;
 }

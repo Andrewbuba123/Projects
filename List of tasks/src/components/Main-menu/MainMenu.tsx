@@ -1,6 +1,7 @@
 import "./MainMenu.css";
+import {MainMenuProps} from "../../types"
 
-export const MainMenu = () => {
+export const MainMenu = ({ tasks } : MainMenuProps) => {
   return (
     <nav className="main-menu">
       <div className="main-menu__title">Меню</div>
@@ -13,7 +14,7 @@ export const MainMenu = () => {
         </li>
         <li className="main-menu__item">
           <a href="/tasks" className="main-menu__link">
-            Задачи
+            Задачи ({tasks.length})
           </a>
         </li>
       </ul>

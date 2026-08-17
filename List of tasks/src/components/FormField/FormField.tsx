@@ -7,15 +7,13 @@ export const FormField = ({
   value,
   onChange,
   type,
+  error,
 }: FormFieldProps) => {
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(event);
-  };
-
   return (
     <label className="form-field">
       <span className="form-field__label">{label}</span>
-      <input name={field} type={type} value={value} onChange={handleChange} />
+      <input name={field} type={type} value={value} onChange={onChange} />
+      {error && <span className="form-field__error-text">{error}</span>}
     </label>
   );
 };

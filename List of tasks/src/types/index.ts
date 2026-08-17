@@ -1,11 +1,10 @@
 import React from "react";
 
 export interface Task {
-  id: string  ;        
-  title: string;      
+  id: string;
+  title: string;
   description: string;
-  count: number | string;       
-  // onDelete: (id : string ) => void
+  count: number | string;
 }
 
 export interface ValidationResult {
@@ -25,6 +24,7 @@ export interface FormFieldProps {
   value: string | number;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   type: string;
+  error?: string;
 }
 
 export interface TaskProps {
@@ -32,19 +32,23 @@ export interface TaskProps {
   title: string;
   description: string;
   count: number | string;
-  onDelete: (id: string ) => void;
+  onDelete: (id: string) => void;
 }
 
 export interface PageFormProps {
-    onAddTask : (data : TaskFormData) => void
+  onAddTask: (data: TaskFormData) => void;
 }
 
-export interface TaskListProps {  
-    tasks : Task[] ,
-    onDelete: (id: string) => void;
+export interface TaskListProps {
+  tasks: Task[];
+  onDelete: (id: string) => void;
 }
 
 export interface ButtonProps {
-    text : string,
-    type? : "button" | "submit" | "reset"
+  text: string;
+  type?: "button" | "submit" | "reset";
+}
+
+export interface MainMenuProps {
+  tasks: Task[];
 }

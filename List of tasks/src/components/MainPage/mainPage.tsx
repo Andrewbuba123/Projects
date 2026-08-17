@@ -1,8 +1,8 @@
-import { PageForm } from "../PageForm/pageForm";
-import "./mainPage.css";
+import { PageForm } from "../PageForm/PageForm";
+import "./MainPage.css";
 import { TaskList } from "../TaskList/TaskList";
 import { useEffect, useState } from "react";
-import { MainMenu } from "../Main-menu/MainMenu";
+import { MainMenu } from "../MainMenu/MainMenu";
 import { TaskFormData } from "../../types";
 import { Task } from "../../types";
 
@@ -28,15 +28,17 @@ export const MainPage = () => {
     setTasks((prevTasks) => [...prevTasks, taskWithId]);
   };
 
-  const deleteTask = (id: string | number) => {
+  const deleteTask = (id: string) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
   return (
-    <div className="mainPage">
-      <MainMenu />
-      <PageForm onAddTask={addTask} />
-      <TaskList tasks={tasks} onDelete={deleteTask} />
+    <div className="main-page">
+      <MainMenu tasks={tasks} />
+      <div className="main-page__content">
+        <PageForm onAddTask={addTask} />
+        <TaskList tasks={tasks} onDelete={deleteTask} />
+      </div>
     </div>
   );
 };

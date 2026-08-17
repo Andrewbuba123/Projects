@@ -1,7 +1,10 @@
-.page_form {
- margin: 0;
- padding: 10px 20px;
- display: flex;
- flex-direction: column;
- gap: 10px;
+.page-form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
 }
