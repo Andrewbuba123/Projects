@@ -1,21 +1,22 @@
 import "./MainMenu.css";
-import {MainMenuProps} from "../../types"
+import { MainMenuProps } from "../../types";
+import { Link } from "react-router-dom";
 
-export const MainMenu = ({ tasks } : MainMenuProps) => {
+export const MainMenu = ({ tasks }: MainMenuProps) => {
   return (
     <nav className="main-menu">
       <div className="main-menu__title">Меню</div>
 
       <ul className="main-menu__list">
         <li className="main-menu__item">
-          <a href="/" className="main-menu__link main-menu__link--active">
+          <Link to="/" className="main-menu__link main-menu__link--active">
             Главная
-          </a>
+          </Link>
         </li>
         <li className="main-menu__item">
-          <a href="/tasks" className="main-menu__link">
+          <Link to="/tasks" className="main-menu__link">
             Задачи ({tasks.length})
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

@@ -5,6 +5,7 @@ export interface Task {
   title: string;
   description: string;
   count: number | string;
+  // status : "Active" | "Completed" | "Paused";
 }
 
 export interface ValidationResult {
@@ -52,3 +53,19 @@ export interface ButtonProps {
 export interface MainMenuProps {
   tasks: Task[];
 }
+
+export interface LayoutProps {
+   tasks : Task[]
+}
+
+export interface HomePageProps {
+    tasks: Task[];
+    onAddTask : (data : TaskFormData) => void;
+    onDeleteTask : (id: string) => void;
+}
+
+export interface TasksPageProps {
+  tasks: Task[];
+  onDeleteTask: (id: string) => void;
+}
+

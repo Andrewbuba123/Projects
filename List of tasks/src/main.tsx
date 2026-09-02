@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
-import { MainPage } from "./components/MainPage/MainPage";
+import { App } from "./components/App/App";
 import "./main.css";
 
 const rootElement = document.getElementById("root");
@@ -13,6 +13,6 @@ const reactRoot = ReactDOM.createRoot(rootElement);
 
 reactRoot.render(
   <StrictMode>
-    <MainPage />
+    <App/>
   </StrictMode>,
 );
