@@ -8,11 +8,6 @@ export interface Task {
   // status : "Active" | "Completed" | "Paused";
 }
 
-export interface ValidationResult {
-  isValid: boolean;
-  message: string;
-}
-
 export interface TaskFormData {
   title: string;
   description: string;
@@ -69,3 +64,12 @@ export interface TasksPageProps {
   onDeleteTask: (id: string) => void;
 }
 
+export interface ValidationResult {
+  isValid: boolean;
+  message?: string;
+};
+
+export type AuthFormData = {
+  login: string;
+  password: string;
+};

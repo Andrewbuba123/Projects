@@ -1,6 +1,6 @@
 import "./MainMenu.css";
 import { MainMenuProps } from "../../types";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const MainMenu = ({ tasks }: MainMenuProps) => {
   return (
@@ -9,14 +9,14 @@ export const MainMenu = ({ tasks }: MainMenuProps) => {
 
       <ul className="main-menu__list">
         <li className="main-menu__item">
-          <Link to="/" className="main-menu__link main-menu__link--active">
+          <NavLink to="/" end className="main-menu__link">
             Главная
-          </Link>
+          </NavLink>
         </li>
         <li className="main-menu__item">
-          <Link to="/tasks" className="main-menu__link">
+          <NavLink to="/tasks" className="main-menu__link">
             Задачи ({tasks.length})
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

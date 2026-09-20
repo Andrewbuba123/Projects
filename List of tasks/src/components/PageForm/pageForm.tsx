@@ -3,9 +3,9 @@ import { FormField } from "../FormField/FormField";
 import { Button } from "../Button/Button";
 import { useState } from "react";
 import { PageFormProps, TaskFormData } from "../../types";
-import { validateFormType } from "../../validate/validateForm/validateType";
-import { validateFormDescription } from "../../validate/validateForm/validateDescription";
-import { validateFormCount } from "../../validate/validateForm/validateCount";
+import { validateFormType } from "../../validate/validateTaskForm/validateType";
+import { validateFormDescription } from "../../validate/validateTaskForm/validateDescription";
+import { validateFormCount } from "../../validate/validateTaskForm/validateCount";
 
 const initialFormData: TaskFormData = {
   title: "",

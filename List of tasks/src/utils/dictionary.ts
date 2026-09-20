@@ -1,4 +1,4 @@
-export const errors = {
+export const formErrors = {
   type: {
     required: "Обязательно ввести название выполняемой работ",
     inValid: "В названии присутствуют недопустимые символы",
@@ -10,7 +10,18 @@ export const errors = {
   },
   count: {
     required: "Требуется ввести количество нужных работников",
-    inValid : "В строке присутствуют лишние символы",
-    positive : "Число должно быть положительным"
+    inValid: "В строке присутствуют лишние символы",
+    positive: "Число должно быть положительным",
+  },
+};
+
+export const authErrors = {
+  login: {
+    required: "Введите логин",
+    minLength: "Логин минимум 3 символа",
+  },
+  password: {
+    required: "Введите пароль",
+    minLength: "Пароль минимум 4 символа",
   },
 };
