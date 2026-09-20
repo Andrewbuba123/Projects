@@ -2,7 +2,7 @@
   width: 250px;
   min-width: 250px;
   height: 100vh;
-  position: fixed;   
+  position: fixed;
   left: 0;
   top: 0;
   padding: 28px 28px 28px 40px;
@@ -16,6 +16,7 @@
 }
 
 .main-menu__list {
+  width: 100%;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -59,4 +60,51 @@
   margin-bottom: 40px;
   border-bottom: 2px solid #a5d6a7;
   width: 100%;
+}
+.main-menu__user {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.main-menu__user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #00897b; 
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.main-menu__user-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+
+.main-menu__logout {
+  background: transparent;
+  border: 1px solid #d32f2f;
+  color: #d32f2f;
+  padding: 10px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.main-menu__logout:hover {
+  background: #d32f2f;
+  color: #ffffff;
 }

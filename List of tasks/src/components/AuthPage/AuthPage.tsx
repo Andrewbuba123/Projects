@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 import "./AuthPage.css";
 import { FormField } from "../FormField/FormField";
 import { Button } from "../Button/Button";
 import { AuthFormData } from "../../types";
-import { login } from "../../utils/auth";
 import { validateLogin } from "../../validate/validateAuth/validateLogin";
 import { validatePassword } from "../../validate/validateAuth/validatePassword";
 
@@ -16,11 +16,15 @@ const initialFormData: AuthFormData = {
 type FormErrors = Partial<Record<keyof AuthFormData, string>>;
 
 export const AuthPage = () => {
-  const navigate = useNavigate();
+  const { user, login } = useAuth();
 
   const [formData, setFormData] = useState<AuthFormData>(initialFormData);
   const [errors, setErrors] = useState<FormErrors>({});
   const [authError, setAuthError] = useState("");
+
+  if (user) {
+    return <Navigate to="/" replace />;
+  }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -39,12 +43,7 @@ export const AuthPage = () => {
 
     if (!ok) {
       setAuthError("Неверный логин или пароль");
-      return;
     }
-
-    setFormData(initialFormData);
-    setErrors({});
-    navigate("/", { replace: true });
   };
 
   const validate = (): boolean => {

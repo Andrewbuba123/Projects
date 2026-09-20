@@ -50,13 +50,13 @@ export interface MainMenuProps {
 }
 
 export interface LayoutProps {
-   tasks : Task[]
+  tasks: Task[];
 }
 
 export interface HomePageProps {
-    tasks: Task[];
-    onAddTask : (data : TaskFormData) => void;
-    onDeleteTask : (id: string) => void;
+  tasks: Task[];
+  onAddTask: (data: TaskFormData) => void;
+  onDeleteTask: (id: string) => void;
 }
 
 export interface TasksPageProps {
@@ -67,9 +67,20 @@ export interface TasksPageProps {
 export interface ValidationResult {
   isValid: boolean;
   message?: string;
-};
+}
 
 export type AuthFormData = {
   login: string;
   password: string;
 };
+
+export interface User {
+  id: string;
+  login: string;
+}
+
+export interface AuthContextValue {
+  user: User | null;
+  login: (login: string, password: string) => boolean;
+  logout: () => void;
+}

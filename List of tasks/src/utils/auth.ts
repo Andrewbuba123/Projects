@@ -1,16 +1,27 @@
-export const login = (login: string, password: string): boolean => {
-  if (login === "admin" && password === "admin") {
-    localStorage.setItem("token", crypto.randomUUID());
-    return true;
+import { User } from "../types";
+
+const USER_KEY = "user";
+
+export const login = (loginValue: string, password: string): User | null => {
+  if (loginValue !== "admin" || password !== "admin") {
+    return null;
   }
 
-  return false;
+  const user: User = { id: crypto.randomUUID(), login: loginValue };
+  localStorage.setItem(USER_KEY, JSON.stringify(user));
+  return user;
 };
+
 
 export const logout = (): void => {
-  localStorage.removeItem("token");
+  localStorage.removeItem("USER_KEY");
 };
 
-export const isAuthenticated = (): boolean => {
-  return Boolean(localStorage.getItem("token"));
+export const getCurrentUser = (): User | null => {
+  try {
+    const raw = localStorage.getItem(USER_KEY);
+    return raw ? (JSON.parse(raw) as User) : null;
+  } catch {
+    return null;
+  }
 };
