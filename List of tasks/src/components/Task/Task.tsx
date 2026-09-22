@@ -1,0 +1,30 @@
+import { TaskProps } from "../../types";
+import "./Task.css";
+
+export const Task = ({
+  id,
+  title,
+  description,
+  count,
+  onDelete,
+}: TaskProps) => {
+  const handleDelete = () => {
+    onDelete(id);
+  };
+
+  return (
+    <li className="task">
+      <div className="task__content">
+        <h3 className="task__title">{title}</h3>
+        <p className="task__description">{description}</p>
+        <span className="task__count">Количество работников: {count}</span>
+        <div className="task__buttons">
+          <button className="button" onClick={handleDelete}>
+            Удалить
+          </button>
+          <button className="button">Изменить</button>
+        </div>
+      </div>
+    </li>
+  );
+};
