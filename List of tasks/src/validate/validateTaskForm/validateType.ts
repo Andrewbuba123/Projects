@@ -9,7 +9,7 @@ export function validateFormType(type: string): ValidationResult {
     };
   }
 
-  if (type.length < 15) {
+  if (type.length < 10) {
     return {
       isValid: false,
       message: formErrors.type.minLength,

@@ -5,7 +5,7 @@ export interface Task {
   title: string;
   description: string;
   count: number | string;
-  // status : "Active" | "Completed" | "Paused";
+  status : "Active" | "Completed" | "Paused";
 }
 
 export interface TaskFormData {
@@ -77,10 +77,12 @@ export type AuthFormData = {
 export interface User {
   id: string;
   login: string;
+  password? : string
 }
 
 export interface AuthContextValue {
   user: User | null;
-  login: (login: string, password: string) => boolean;
+  login: (loginValue: string, password: string) => boolean;
+  register: (loginValue: string, password: string) => boolean;
   logout: () => void;
 }

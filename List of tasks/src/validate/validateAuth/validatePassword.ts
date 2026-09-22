@@ -6,7 +6,7 @@ export const validatePassword = (value: string): ValidationResult => {
     return { isValid: false, message: authErrors.password.required };
   }
 
-  if (value.length < 4) {
+  if (value.length < 3) {
     return { isValid: false, message: authErrors.password.required };
   }
 
